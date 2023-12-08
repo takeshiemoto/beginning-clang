@@ -12,7 +12,7 @@ typedef struct {
 void writeTodoToCSV(const Todo todos[], int count) {
     // ファイルを書き込みモードで開く
     FILE *file = fopen("data.csv", "w");
-    if(file == NULL) {
+    if (file == NULL) {
         printf("Unable to create file\n");
         return;
     }
