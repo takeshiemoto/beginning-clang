@@ -3,4 +3,6 @@ project(c_todo C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(c_todo main.c)
+add_executable(c_todo main.c
+        recursively.h
+        recursively.c)
