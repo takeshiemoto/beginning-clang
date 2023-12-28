@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.27)
-project(c_todo C)
+project(beginning-clang C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(c_todo main.c
+add_executable(beginning-clang main.c
         recursively.h
         recursively.c)

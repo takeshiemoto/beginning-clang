@@ -93,23 +93,37 @@ void writeTodoToCSV(const Todo todos[], int count) {
     fclose(file);
 }
 
+/**
+ * Constant
+ */
+const double TAX = 0.1;
+
+/**
+ * Enum
+ */
+enum {
+    OK, NG
+};
+
+enum {
+    GOOD = 1, BAD = 0
+};
+
+enum {
+    SMALL = 1, MIDDLE, BIG
+};
+
 int main() {
-    Todo todos[MAX_TODOS];
-    int todoCount = 0;
+    // 初期化していない変数はいい加減な値が入っている
+    int x;
+    printf("%d\n", x);
 
-    switch (getUserChoice()) {
-        case LIST_TODO:
-            readTodosFromCSV();
-            break;
-        case ADD_NEW_TODO:
-            addNewTodo(todos, &todoCount);
-            writeTodoToCSV(todos, todoCount);
-            break;
-        default:
-            printf("Invalid choice. Exiting.\n");
-            return 1;
-
-    }
-
+    printf("%d\n", OK);
+    printf("%d\n", NG);
+    printf("%d\n", GOOD);
+    printf("%d\n", BAD);
+    printf("%d\n", SMALL);
+    printf("%d\n", MIDDLE);
+    printf("%d\n", BIG);
     return 0;
 }
