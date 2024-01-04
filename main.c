@@ -94,6 +94,20 @@ void writeTodoToCSV(const Todo todos[], int count) {
 }
 
 /**
+ * 線形探索関数
+ */
+int search() {
+    int i = 1;
+    int a[] = {1, 2, 3, 4, 5, 6, 7};
+    int n = 7;
+    for (i = 0; i < n; i++) {
+        if (a[i] == 5) {
+            return i;
+        }
+    }
+}
+
+/**
  * Constant
  */
 const double TAX = 0.1;
